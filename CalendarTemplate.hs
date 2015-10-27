@@ -110,7 +110,7 @@ makeGroupsOf :: Int -> [a] -> [[a]]
 makeGroupsOf = error "'makeGroupsOf' is undefined"
 
 
--- Exercise*: Implement function besides :: [[String]] -> [String], besides [["a", "b"], ["c", "d"], ["e", "f"]] = ["a|c|e", "b|d|f"
+-- | Exercise*: Implement function besides :: [[String]] -> [String], besides [["a", "b"], ["c", "d"], ["e", "f"]] = ["a | c | e", "b | d | f"]
 -- | Hint: you may need to use functions foldr1, zipWith and repeat
 besides :: [[String]] -> [String]
 besides xss = error "'besides' is undefined"
