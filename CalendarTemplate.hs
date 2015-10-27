@@ -131,3 +131,5 @@ myfoldl = error "'myfoldl' is undefined"
 -- | Exercise*: define function myfoldl' in terms of foldr
 myfoldl' :: (a -> b -> a ) -> a -> [b] -> a
 myfoldl' = error "'myfoldl'' is undefined"
+
+
