@@ -4,11 +4,15 @@ import System.Environment (getArgs)
 
 
 main :: IO ()
-main = do args <- getArgs
-          -- let year = (read $ head args) :: Int
-          let year = 2015
-              calendar = calendarForYear year
-          putStrLn $ showCalendar calendar
+main = do
+  -- print $ show [1..8]
+  -- error "We are just testing..."
+
+  putStrLn "Enter a year to get the calendar: "
+  y <- getLine
+  let year = read y :: Int
+      calendar = calendarForYear year
+  putStrLn $ showCalendar calendar
 
 
 type Year     = Int -- 0..
@@ -110,7 +114,7 @@ makeGroupsOf :: Int -> [a] -> [[a]]
 makeGroupsOf = error "'makeGroupsOf' is undefined"
 
 
--- | Exercise*: Implement function besides :: [[String]] -> [String], besides [["a", "b"], ["c", "d"], ["e", "f"]] = ["a|c|e", "b|d|f"]
+-- | Exercise*: Implement function besides :: [[String]] -> [String], besides [ ["a", "b"], ["c", "d"], ["e", "f"] ] = [ "a|c|e", "b|d|f" ]
 -- | Hint: you may need to use functions foldr1, zipWith and repeat
 besides :: [[String]] -> [String]
 besides xss = error "'besides' is undefined"
